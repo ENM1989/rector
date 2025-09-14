@@ -7,6 +7,8 @@ use RectorPrefix202509\OndraM\CiDetector\CiDetector;
 use Rector\Bootstrap\ExtensionConfigResolver;
 use Rector\Caching\ValueObject\Storage\MemoryCacheStorage;
 use Rector\Config\RectorConfig;
+use Rector\PhpParser\Printer\BetterStandardPrinter;
+use Rector\PhpParser\Printer\ZephirPrinter;
 return static function (RectorConfig $rectorConfig): void {
     $rectorConfig->paths([]);
     $rectorConfig->skip([]);
@@ -36,4 +38,6 @@ return static function (RectorConfig $rectorConfig): void {
     // allow real paths in output formatters
     $rectorConfig->reportingRealPath(\false);
     $rectorConfig->treatClassesAsFinal(\false);
+
+    $rectorConfig->singleton(BetterStandardPrinter::class, ZephirPrinter::class);
 };
