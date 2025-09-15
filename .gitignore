@@ -1,0 +1,15 @@
+
+composer.lock
+composer.phar
+vendor/bin/phpstan
+vendor/bin/phpstan.phar
+vendor/composer/platform_check.php
+vendor/phpstan/phpstan/LICENSE
+vendor/phpstan/phpstan/README.md
+vendor/phpstan/phpstan/UPGRADING.md
+vendor/phpstan/phpstan/bootstrap.php
+vendor/phpstan/phpstan/composer.json
+vendor/phpstan/phpstan/conf/bleedingEdge.neon
+vendor/phpstan/phpstan/phpstan
+vendor/phpstan/phpstan/phpstan.phar
+vendor/phpstan/phpstan/phpstan.phar.asc
